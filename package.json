@@ -1,0 +1,28 @@
+{
+  "name": "tech-task",
+  "version": "1.0.0",
+  "description": "technical task for Bitmedia Labs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "react",
+    "express",
+    "sqlite"
+  ],
+  "author": "Vladislav Kucheryaviy <crispyyv@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.3"
+  }
+}
